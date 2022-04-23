@@ -14,3 +14,5 @@ sudo apt install -y curl
 curl -L https://github.com/docker/compose/releases/download/2.4.1/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
 chmod +x ~/docker-compose
 sudo mv ~/docker-compose /usr/local/bin/docker-compose
+sudo usermod -aG docker $USER
+sudo reboot
