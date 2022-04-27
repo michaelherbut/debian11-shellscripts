@@ -11,6 +11,7 @@ sudo add-apt-repository \
 sudo apt update
 sudo apt -y install wget docker-ce docker-ce-cli containerd.io
 sudo apt install -y curl
-sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.25.3/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 sudo usermod -aG docker $USER
 sudo reboot
